@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   pull_request:
 
 jobs:
@@ -44,7 +45,7 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
         env:
-             GOOGLE_CREDENTIALS: ${{ secrets.GCP_TF_KEY}}
+          GOOGLE_CREDENTIALS: ${{ secrets.GCP_TF_KEY}}
 
       # Step 7: Terraform Plan
       - name: Terraform Plan
