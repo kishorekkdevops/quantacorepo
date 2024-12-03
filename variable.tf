@@ -21,6 +21,7 @@ variable "region" {
 variable "bucket_prefix" {
   description = "Prefix for bucket names"
   type        = string
+  default = "appl1"
 }
 
 variable "location" {
