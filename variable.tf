@@ -1,7 +1,7 @@
 variable "credentials_file" {
   description = "Path to the GCP credentials file"
   type        = string
-  default = ""
+  //default     = ""
   //default     = "./quantaco-443301-90aa0b1191d8.json"
 }
 
